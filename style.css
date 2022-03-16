@@ -1,0 +1,81 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Playfair Display";
+}
+
+[hidden] {
+	display: none;
+}
+
+h1 {
+	font-size: 2rem;
+}
+h2 {
+	font-size: 1.5rem;
+}
+h3 {
+	font-size: 1.17rem;
+}
+h4 {
+	font-size: 1rem;
+}
+h5 {
+	font-size: 0.83rem;
+}
+h6 {
+	font-size: 0.67rem;
+}
+
+h1 {
+	margin: 0.67em 0;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+img,
+svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border-style: none;
+}
+
+picture {
+	display: contents;
+}
+source {
+	display: none;
+}
+svg {
+	overflow: hidden;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+	display: block;
+}
+
+.flex {
+	display: flex;
+}
+
+nav ul li {
+	list-style-type: none;
+}
