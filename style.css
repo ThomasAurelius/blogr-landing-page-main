@@ -85,7 +85,7 @@ header {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: auto;
-
+	border-radius: 0 0 0 6rem;
 	padding-bottom: 30px;
 	height: 100%;
 }
