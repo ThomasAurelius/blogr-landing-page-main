@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Noto:wght@400&family=Ubuntu:wght@400;500;700&display=swap");
 
 *,
 ::before,
@@ -18,21 +18,27 @@ body {
 
 h1 {
 	font-size: 2rem;
+	font-family: "Ubuntu";
 }
 h2 {
 	font-size: 1.5rem;
+	font-family: "Ubuntu";
 }
 h3 {
 	font-size: 1.17rem;
+	font-family: "Ubuntu";
 }
 h4 {
 	font-size: 1rem;
+	font-family: "Ubuntu";
 }
 h5 {
 	font-size: 0.83rem;
+	font-family: "Ubuntu";
 }
 h6 {
 	font-size: 0.67rem;
+	font-family: "Ubuntu";
 }
 
 h1 {
@@ -112,13 +118,60 @@ nav ul li a {
 /* Add in the disappearing nav boxes */
 /* --------------------------------- */
 
-.nav-header::after {
-	content: "\f107 ";
-	padding: 10px;
+.product-modal ul {
+	/* display: none; */
+	position: relative;
 }
 
-.nav-inner {
-	display: none;
+.company-modal ul {
+	/* display: none; */
+	position: relative;
+}
+
+.connect-modal ul {
+	/* display: none; */
+	position: relative;
+}
+
+.modal {
+	position: absolute;
+	top: 5px;
+	left: -65px;
+}
+
+.modal li {
+	background-color: #eee;
+	padding: 5px;
+}
+.modal a {
+	color: #000;
+	padding: 15px;
+}
+
+.nav-header:hover {
+	text-decoration: underline;
+}
+
+.product-modal a:hover,
+.company-modal a:hover,
+.connect-modal a:hover,
+.product-modal a:focus,
+.company-modal a:focus,
+.connect-modal a:focus {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.product-modal img {
+	margin: 5px 15px 0 5px;
+}
+
+.company-modal img {
+	margin: 5px 15px 0 5px;
+}
+
+.connect-modal img {
+	margin: 5px 15px 0 5px;
 }
 
 /* .nav-header:hover .nav-inner:hover {
@@ -214,6 +267,7 @@ nav ul li a {
 
 .section-2 {
 	position: relative;
+	margin-bottom: 60px;
 }
 
 .section-2 h2 {
@@ -231,79 +285,58 @@ nav ul li a {
 	width: 45vw;
 }
 
-.section-2-img img {
+.section-2-img {
 	position: absolute;
-	width: 45vw;
+	width: 50vw;
 	right: -100px;
-	top: -50px;
-	height: 440px;
+	top: -100px;
+	height: 500px;
 }
+
+/* Section 3 */
 
 .section-3 {
-	margin-block: 60px;
+	display: grid;
+	grid-template-areas:
+		"phones"
+		"text";
+	margin-block: auto;
 	position: relative;
 	background-image: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
-	height: 300px;
+	height: 30vw;
+	border-radius: 0 6rem 0 6rem;
 }
-/* 
-Background gradient - body:
 
-- Very dark gray blue: hsl(237, 17%, 21%)
-- Very dark desaturated blue: hsl(237, 23%, 32%) */
-
-.phone1 {
+/* .mobile_circles {
 	position: absolute;
-	border: 10px solid black;
-	border-radius: 30px;
-	background-image: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-	height: 320px;
-	width: 150px;
-	top: -30px;
-	left: 100px;
-	display: flex;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
-
-.notch1 {
-	border: 8px solid black;
-	height: 1px;
-	width: 200px;
-	margin: 0 auto;
-	margin-left: 25px;
-	padding-left: 60px;
-	border-radius: 50px;
-	margin-top: -10px;
-}
-.phone1 img {
-	margin: auto;
-	transform: translateX(-85%);
-}
-
-.phone2 {
+.mobile_circles img {
+	width: 60%;
 	position: absolute;
-	border: 10px solid black;
-	border-radius: 30px;
-	background-image: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-	height: 320px;
-	width: 150px;
-	top: 10px;
-	left: 280px;
-	display: flex;
-}
-
-.notch2 {
-	border: 8px solid black;
-	height: 1px;
-	width: 80px;
-	margin: 0 auto;
-	margin-left: 25px;
-	padding-left: 40px;
-	border-radius: 50px;
-	margin-top: -10px;
+	top: -120%;
+	left: -10%;
+	z-index: -1;
+} */
+.phones {
+	width: 40%;
+	grid-area: phones;
+	position: absolute;
+	top: -50px;
+	left: 5vw;
+	z-index: 99;
 }
 
 .section-3-text {
-	padding-top: 60px;
+	grid-area: text;
+	padding-block: auto;
 	margin-left: 50%;
+	justify-content: center;
+	align-items: center;
 	width: 45vw;
 }
 
@@ -333,6 +366,15 @@ Background gradient - body:
 
 .footer {
 	background-color: black;
+	border-radius: 0 6rem 0 0;
+}
+
+.footer-all {
+	justify-content: center;
+}
+
+.footer-img {
+	margin-top: 15px;
 }
 
 .footer a {
@@ -341,4 +383,22 @@ Background gradient - body:
 
 .footer ul li a {
 	text-decoration: none;
+}
+
+.footer ul li a:hover,
+.footer ul li a:focus {
+	text-decoration: underline;
+}
+
+.footer-group {
+	margin-inline: 6vw;
+}
+
+.footer-header {
+	padding-left: 40px;
+	margin-bottom: 20px;
+}
+
+.footer-list li {
+	padding-block: 5px;
 }
