@@ -70,9 +70,16 @@ connect_modal.addEventListener('mouseout', (e) => {
    connect_modal.style.visibility = 'hidden'
 })
 
+// mobile menu
+
+const product_menu = document.querySelector('.product-menu-title')
+
+const product_menu_list = document.querySelector('.product-menu-list')
 
 
-
+product_menu.addEventListener('click', () => {
+   product_menu_list.classList.toggle('hidden')
+})
 
 
 

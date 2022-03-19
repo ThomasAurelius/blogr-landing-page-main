@@ -413,11 +413,16 @@ nav ul li a {
 		display: flex;
 		position: relative;
 	}
-	.menu-icon {
+
+	.menu-close {
 		display: inline;
 		position: absolute;
 		top: 10px;
 		right: 10px;
+	}
+
+	.menu-icon {
+		display: none;
 	}
 
 	#primary-navigation {
@@ -463,5 +468,97 @@ nav ul li a {
 	.footer-img {
 		width: 100px;
 		display: inline;
+	}
+
+	.mobile-menu {
+		flex-direction: column;
+		background-color: #eee;
+		width: 85vw;
+		margin: 0 auto;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
+	}
+
+	.mobile-menu > ul {
+		margin: 0 0 0 -40px;
+		text-align: center;
+	}
+
+	.product-menu-title:hover,
+	.company-menu-title:hover,
+	.connect-menu-title:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	.product-menu-title > img {
+		display: inline;
+	}
+	.company-menu-title > img {
+		display: inline;
+	}
+	.connect-menu-title > img {
+		display: inline;
+	}
+
+	.product-menu-title {
+		margin: 20px;
+	}
+
+	.company-menu-title {
+		margin: 20px;
+	}
+	.connect-menu-title {
+		margin: 20px;
+	}
+
+	.menu-list {
+		list-style-type: none;
+		background-color: lightgrey;
+	}
+
+	.menu-list ul {
+		margin-left: -40px;
+	}
+
+	.menu-list li {
+		padding: 5px;
+	}
+
+	.menu-list a {
+		text-decoration: none;
+		color: black;
+	}
+
+	.product-menu-list,
+	.company-menu-list,
+	.connect-menu-list {
+		display: none;
+	}
+
+	.nav-container-btn {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.nav-container-btn > * {
+		margin: 20px;
+		padding: 20px;
+	}
+
+	.login-btn {
+		color: hsl(237, 23%, 32%);
+	}
+
+	.sign-up-btn {
+		background-color: hsl(353, 100%, 62%);
+		color: #eee;
+		padding-top: 10px;
+		padding-bottom: 25px;
+	}
+
+	.hidden {
+		display: none;
 	}
 }
