@@ -81,43 +81,43 @@
     </nav>
     <div>
       <div>
-        <img src="./images/logo.svg" alt="">
+        <img class="menu-logo" src="./images/logo.svg" alt="">
       </div>
       <div class="menu-icon">
-        <img src="./images/icon-hamburger.svg" alt="">
+        <img id="menu-icon" src="./images/icon-hamburger.svg" alt="">
       </div>
-      <div class="menu-close">
-        <img src="./images/icon-close.svg" alt="">
+      <div class="menu-close ">
+        <img id="menu-close" class="hidden" src="./images/icon-close.svg" alt="">
       </div>
     </div>
-    <div class="mobile-menu flex">
-      
+
+    <div id="mobile-menu" class="mobile-menu hidden flex">
       <ul>
         <div class="product-menu-title">Product <img src="./images/icon-arrow-dark.svg" alt=""></div>
-        <div class="product-menu-list menu-list">
-          <ul class="">
-            <li><a href="">Overview</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Marketplace</a></li>
-            <li><a href="">Features</a></li>
-            <li><a href="">Integrations</a></li>
+        <div class="product-menu-list menu-list hidden">
+          <ul >
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Integrations</a></li>
           </ul>
         </div>
         <div class="company-menu-title">Company <img src="./images/icon-arrow-dark.svg" alt=""></div>
-        <div class="company-menu-list menu-list">
+        <div class="company-menu-list menu-list hidden">
           <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Team</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Careers</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
           </ul>
         </div>
         <div class="connect-menu-title">Connect <img src="./images/icon-arrow-dark.svg" alt=""></div>
-        <div class="connect-menu-list menu-list">
+        <div class="connect-menu-list menu-list hidden">
           <ul>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Newsletter</a></li>
-            <li><a href="">LinkedIn</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">LinkedIn</a></li>
           </ul>
         </div>
       </ul>
@@ -125,9 +125,7 @@
       <div class="nav-container-btn">
         <a href="" class="btn nav-btn login-btn">Login</a>
         <a href="" class="btn nav-btn sign-up-btn">Sign Up</a>
-      </div>
-
-      
+      </div>      
     </div>
   
 
@@ -217,43 +215,45 @@
   </section>
 <footer id="footer" class="footer">
   <div class="footer-all flex">
-    <div class="footer-img">
-      <img  src="./images/logo.svg" alt="">
-    </div>
-      <div>
-        <!-- NAV NEEDS FIXED. CSS GRIS MAYBE? -->
-        <ul class="footer-nav flex">
-          <div class="footer-group">
-            <li class="footer-header"><a href="">Product</a></li>
-            <ul class="footer-list">
-              <li><a href="">Overview</a></li>
-              <li><a href="">Pricing</a></li>
-              <li><a href="">Marketplace</a></li>
-              <li><a href="">Features</a></li>
-              <li><a href="">Integrations</a></li>
-            </ul>
-          </div>
-          <div class="footer-group">
-            <li class="footer-header"><a href="">Company</a></li>
-              <ul class="footer-list">
-              <li><a href="">About</a></li>
-              <li><a href="">Team</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Careers</a></li>
-            </ul>
-          </div>
     
-          <div class="footer-group">
-            <li class="footer-header"><a href="">Connect</a></li>
-            <ul class="footer-list">
-              <li><a href="">Contact</a></li>
-              <li><a href="">Newsletter</a></li>
-              <li><a href="">LinkedIn</a></li>
-            </ul>
-          </div>
+    <div>
+      <!-- NAV NEEDS FIXED. CSS GRID MAYBE? -->
+      <ul class="footer-nav" >
+        <div class="footer-img">
+          <img src="./images/logo.svg" alt="">
+        </div>
+        <div class="footer-group">
+
+          <li class="footer-header"><a href="">Product</a></li>
+          <ul class="footer-list">
+            <li><a href="">Overview</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Marketplace</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Integrations</a></li>
+          </ul>
+      </div>
+      <div class="footer-group">
+        <li class="footer-header"><a href="">Company</a></li>
+          <ul class="footer-list">
+          <li><a href="">About</a></li>
+          <li><a href="">Team</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Careers</a></li>
         </ul>
       </div>
+    
+      <div class="footer-group">
+        <li class="footer-header"><a href="">Connect</a></li>
+        <ul class="footer-list">
+          <li><a href="">Contact</a></li>
+          <li><a href="">Newsletter</a></li>
+          <li><a href="">LinkedIn</a></li>
+        </ul>
+      </div>
+      </ul>
   </div>
+</div>
   
 </footer>
   

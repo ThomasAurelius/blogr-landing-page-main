@@ -352,9 +352,15 @@ nav ul li a {
 /* footer */
 
 .footer {
+	display: flex;
 	padding-top: 30px;
 	background-color: hsl(240, 10%, 16%);
 	border-radius: 0 6rem 0 0;
+}
+
+.footer-nav {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .footer-all {
@@ -392,6 +398,12 @@ nav ul li a {
 	padding-block: 5px;
 }
 
+.mobile-menu,
+.menu-logo,
+.menu-close {
+	display: none;
+}
+
 @media (max-width: 1075px) {
 	.nav-container-btn {
 		margin: 30px auto;
@@ -414,15 +426,18 @@ nav ul li a {
 		position: relative;
 	}
 
-	.menu-close {
+	.menu-icon {
 		display: inline;
 		position: absolute;
 		top: 10px;
 		right: 10px;
 	}
 
-	.menu-icon {
-		display: none;
+	.menu-close {
+		display: block;
+		position: absolute;
+		top: 10px;
+		right: 10px;
 	}
 
 	#primary-navigation {
@@ -434,27 +449,53 @@ nav ul li a {
 		flex-direction: column;
 	}
 
+	.section-2-img {
+		margin-top: 40px;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.section-2 h2 {
+		margin-block: 100px;
+	}
+
 	.section-2-text {
-		margin-top: 450px;
 		width: 75vw;
+		text-align: center;
+		margin: 350px auto 0 auto;
 	}
 
 	.section-3 {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		height: 100%;
+		min-height: 300px;
+	}
+
+	.section-3 .phones {
+		position: absolute;
+		top: -30%;
+		left: 25%;
 	}
 
 	.section-3-text {
-		margin-left: 12vw;
+		margin: 15vh 8vw 5vh 12vw;
+		text-align: center;
 	}
 
 	.section-4 {
+		display: flex;
+		flex-direction: column;
 		margin-block: 30px;
 	}
 
 	.section-4-img {
-		width: 75%;
+		margin: 0 auto;
+	}
+
+	.section-4-text {
+		text-align: center;
 	}
 
 	footer {
@@ -462,12 +503,31 @@ nav ul li a {
 		flex-direction: column;
 	}
 
-	.footer-list {
+	.footer-all {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.footer-img {
 		width: 100px;
 		display: inline;
+		margin: 0 auto 20px;
+	}
+
+	.footer-header {
+		font-weight: 700;
+	}
+
+	.footer-nav {
+		display: flex;
+		flex-direction: column;
+		margin-left: -80px;
+		text-align: center;
+	}
+
+	.footer-group {
+		margin-bottom: 20px;
 	}
 
 	.mobile-menu {
@@ -479,6 +539,10 @@ nav ul li a {
 		justify-content: center;
 		align-items: center;
 		box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
+	}
+
+	.menu-logo {
+		display: block;
 	}
 
 	.mobile-menu > ul {
@@ -529,12 +593,6 @@ nav ul li a {
 	.menu-list a {
 		text-decoration: none;
 		color: black;
-	}
-
-	.product-menu-list,
-	.company-menu-list,
-	.connect-menu-list {
-		display: none;
 	}
 
 	.nav-container-btn {
