@@ -94,8 +94,7 @@ header {
 	background-size: auto;
 	border-radius: 0 0 0 6rem;
 	padding-bottom: 100px;
-
-	width: 100vw;
+	width: 100%;
 }
 
 /* Navigation */
@@ -241,22 +240,8 @@ nav ul li a {
 	min-width: 182px;
 }
 
-@media (max-width: 1075px) {
-	.nav-container-btn {
-		margin: 30px auto;
-	}
-}
-
-@media (max-width: 850px) {
-	.logo {
-		margin: 20px 20px;
-	}
-}
-
-@media (max-width: 650px) {
-	.nav-containers {
-		flex-direction: column;
-	}
+.menu-icon {
+	display: none;
 }
 
 /* Intro */
@@ -321,29 +306,22 @@ nav ul li a {
 /* Section 3 */
 
 .section-3 {
-	position: relative;
+	display: flex;
 	background: url("./images/bg-pattern-circles.svg") no-repeat top 62% left
 			calc(40vw - 82rem),
 		linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
 	background-size: 100rem, 100%;
 	height: 420px;
-
 	border-radius: 0 6rem 0 6rem;
 	z-index: 1;
 }
 
 .phones {
-	display: flex;
-	position: absolute;
-	top: -15%;
-	left: 1%;
-	z-index: 10;
+	width: 45vw;
+	margin: 0 auto;
 }
 
 .section-3-text {
-	position: absolute;
-	left: 40rem;
-	top: 30%;
 	max-width: 500px;
 }
 
@@ -412,4 +390,78 @@ nav ul li a {
 
 .footer-list li {
 	padding-block: 5px;
+}
+
+@media (max-width: 1075px) {
+	.nav-container-btn {
+		margin: 30px auto;
+	}
+}
+
+@media (max-width: 850px) {
+	.logo {
+		margin: 20px 20px;
+	}
+}
+
+@media (max-width: 650px) {
+	.nav-containers {
+		flex-direction: column;
+	}
+
+	.mobile-menu {
+		display: flex;
+		position: relative;
+	}
+	.menu-icon {
+		display: inline;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+
+	#primary-navigation {
+		display: none;
+	}
+
+	.section-2 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.section-2-text {
+		margin-top: 450px;
+		width: 75vw;
+	}
+
+	.section-3 {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.section-3-text {
+		margin-left: 12vw;
+	}
+
+	.section-4 {
+		margin-block: 30px;
+	}
+
+	.section-4-img {
+		width: 75%;
+	}
+
+	footer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer-list {
+	}
+
+	.footer-img {
+		width: 100px;
+		display: inline;
+	}
 }
