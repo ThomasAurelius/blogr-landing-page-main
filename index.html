@@ -13,6 +13,7 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <script type="text/javascript" src="./index.js" defer></script>
 </head>
 <body>
   <header>
@@ -22,48 +23,56 @@
         
         <div class="">
           <div class="nav-container">
-            <ul class="flex">
-              <li class="nav-header"><a href="">Product</a></li>
-              <!-- NEEDS WORKING FUNCTION -->
-                <div class="product-modal">
-                  <img src="./images/icon-arrow-light.svg" alt="">
-                  <ul class="modal">
-                    <li class="nav-inner"><a href="">Overview</a></li>
-                    <li class="nav-inner"><a href="">Pricing</a></li>
-                    <li class="nav-inner"><a href="">Marketplace</a></li>
-                    <li class="nav-inner"><a href="">Features</a></li>
-                    <li class="nav-inner"><a href="">Integrations</a></li>
-                  </ul>
-                  
+            <ul class="flex">              
+              <div class="nav-header" id="product-title">
+                Product
+              </div>
+              <div class="nav-icon">
+                <img src="./images/icon-arrow-light.svg" class='nav-icon' alt="">
+              </div>
+              <div class="product-modal" id="product-modal" >                  
+                <ul class="modal" >
+                  <li class="nav-inner"><a href="">Overview</a></li>
+                  <li class="nav-inner"><a href="">Pricing</a></li>
+                  <li class="nav-inner"><a href="">Marketplace</a></li>
+                  <li class="nav-inner"><a href="">Features</a></li>
+                  <li class="nav-inner"><a href="">Integrations</a></li>
+                </ul>                  
+              </div>
+
+              <div class="nav-header" id="company-title">
+                Company
+              </div>
+                <div class="nav-icon">
+                  <img  src="./images/icon-arrow-light.svg" alt="">
                 </div>
-              <li class="nav-header"><a href="">Company</a></li>
-          
-                <div class="company-modal">
-                  <img src="./images/icon-arrow-light.svg" alt="">
-                  <ul class="modal">
+                <div class="company-modal" id="company-modal">                  
+                  <ul class="modal" >
                     <li class="nav-inner"><a href="">About</a></li>
                     <li class="nav-inner"><a href="">Team</a></li>
                     <li class="nav-inner"><a href="">Blog</a></li>
                     <li class="nav-inner"><a href="">Careers</a></li>
-                  </ul>
-                  
+                  </ul>                  
                 </div>
           
-              <li class="nav-header"><a href="">Connect</a></li>
-                <div class="connect-modal">
-                  <img src="./images/icon-arrow-light.svg" alt="">
-                  <ul class="modal">
+              <div class="nav-header" id="connect-title">
+                Connect
+              </div>
+              <div class="nav-icon">
+                <img src="./images/icon-arrow-light.svg" alt="">
+              </div>
+                <di class="connect-modal" id="connect-modal">                  
+                  <ul class="modal" >
                     <li class="nav-inner"><a href="">Contact</a></li>
                     <li class="nav-inner"><a href="">Newsletter</a></li>
                     <li class="nav-inner"><a href="">LinkedIn</a></li>
-                  </ul>
-                  
+                  </ul>                  
                 </div>
             </ul>
           </div>
         </div>
         
-        <div class="nav-container nav-container-btn">
+        <div class=" nav-container-btn">
           <a href="" class="btn nav-btn login-btn">Login</a>
           <a href="" class="btn nav-btn white-btn">Sign Up</a>
         </div>
@@ -107,20 +116,22 @@
         </div>
       </div>
       <div class="section-2-img">
-        <img src="./images/illustration-editor-desktop.svg" alt="">
+        <img src="./images/illustration-editor-desktop.svg" alt="desktop graphic">
       </div>
     </div>
 </section>
 
-  <section id="section-3" class="section-3">
+  <section id="section-3" class="">
     
-    <div class="section-3 ">
-      <!-- <div class="mobile-circles">
-          <img src="./images/bg-pattern-circles.svg" alt="">
-      </div> -->
-      <div class="phones">
-          <img src="./images/illustration-phones.svg
-        " alt="">        
+    <div class="section-3 flex">
+      <div>
+        <div class="mobile-circles">
+            <!-- <img src="./images/bg-pattern-circles.svg" alt="circles"> -->
+        </div>
+        <div class="phones">
+            <img src="./images/illustration-phones.svg
+          " alt="cell phones">
+        </div>
       </div>
      
       <div class="section-3-text">
@@ -199,6 +210,8 @@
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Thomas Aurelius  </a>.
+    
   </div>
+  
 </body>
 </html>
