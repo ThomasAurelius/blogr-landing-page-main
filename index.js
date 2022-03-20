@@ -11,63 +11,62 @@ const connect_modal = document.getElementById('connect-modal')
 
 
 product.addEventListener('mouseover', (e) => {
-   product_modal.style.visibility = 'visible'
-   console.log(e)
+   product_modal.style.display = 'block'
+   
 })
 
 product_modal.addEventListener('mouseover', (e) => {
-   product_modal.style.visibility = 'visible'
-   console.log(e)
+   product_modal.style.display = 'block'
 })
 
 product.addEventListener('mouseout', (e) => {
-   product_modal.style.visibility = 'hidden'
+   product_modal.style.display = 'none'
 })
 
-product_modal.addEventListener('mouseout', (e) => {
-   product_modal.style.visibility = 'hidden'
-})
-
-
-
-company.addEventListener('mouseover', (e) => {
-   company_modal.style.visibility = 'visible'
-   console.log(e)
-})
-
-company_modal.addEventListener('mouseover', (e) => {
-   company_modal.style.visibility = 'visible'
-   console.log(e)
-})
-
-company.addEventListener('mouseout', (e) => {
-   company_modal.style.visibility = 'hidden'
-})
-
-company_modal.addEventListener('mouseout', (e) => {
-   company_modal.style.visibility = 'hidden'
+product_modal.addEventListener('mouseout', () => {
+   product_modal.style.display = 'none'
 })
 
 
 
-
-
-connect.addEventListener('mouseover', (e) => {
-   connect_modal.style.visibility = 'visible'
-   console.log(e)
+company.addEventListener('mouseover', () => {
+   company_modal.style.display = 'block'
+   
 })
 
-connect_modal.addEventListener('mouseover', (e) => {
-   connect_modal.style.visibility = 'visible'
-   console.log(e)
+company_modal.addEventListener('mouseover', () => {
+   company_modal.style.display = 'block'
+   
 })
 
-connect.addEventListener('mouseout', (e) => {
-   connect_modal.style.visibility = 'hidden'
+company.addEventListener('mouseout', () => {
+   company_modal.style.display = 'none'
 })
 
-connect_modal.addEventListener('mouseout', (e) => {
-   connect_modal.style.visibility = 'hidden'
+company_modal.addEventListener('mouseout', () => {
+   company_modal.style.display = 'none'
+})
+
+
+
+
+
+connect.addEventListener('mouseover', () => {
+   connect_modal.style.display = 'block'
+   
+})
+
+connect_modal.addEventListener('mouseover', () => {
+   connect_modal.style.display = 'block'
+  
+})
+
+connect.addEventListener('mouseout', () => {
+   connect_modal.style.display = 'none'
+})
+
+connect_modal.addEventListener('mouseout', () => {
+   connect_modal.style.display = 'none'
 })
 
 // mobile menu

@@ -103,6 +103,11 @@ nav {
 	justify-content: center;
 }
 
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+}
+
 .logo {
 	margin: 20px 60px;
 	height: 40px;
@@ -164,7 +169,7 @@ nav ul li a {
 	cursor: pointer;
 }
 
-.product-modal img {
+/* .product-modal img {
 	margin: 5px 5px 0 5px;
 }
 
@@ -174,18 +179,21 @@ nav ul li a {
 
 .connect-modal img {
 	margin: 5px 5px 0 5px;
-}
+} */
 
 .product-modal {
-	visibility: hidden;
+	/* visibility: hidden; */
+	display: none;
 }
 
 .company-modal {
-	visibility: hidden;
+	/* visibility: hidden; */
+	display: none;
 }
 
 .connect-modal {
-	visibility: hidden;
+	/* visibility: hidden; */
+	display: none;
 }
 
 .nav-icon {
