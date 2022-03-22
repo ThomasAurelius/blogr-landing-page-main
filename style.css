@@ -178,11 +178,16 @@ a {
 
 .img-phones {
 	position: absolute;
-	top: 20px;
+	top: 20%;
 	width: 90vmin;
 	margin-top: 7rem;
 }
 
+@media (min-width: 400px) {
+	.img-phones {
+		width: 60vmin;
+	}
+}
 .middle {
 	background-image: url("./images/bg-pattern-circles.svg"),
 		linear-gradient(#2c2d3f, #3f4164);
